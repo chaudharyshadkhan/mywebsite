@@ -13,6 +13,7 @@
             height: 100vh;
             background-color: #f4f4f4;
             background-image: url('photo1.jpg');
+            
         
         }
         .calculator {
@@ -21,6 +22,7 @@
             padding: 20px;
             background-color: rgb(0, 18, 136);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: fit-content;
         }
         .display {
             width: 100%;
@@ -32,6 +34,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: white;
+            width: fit-content;
         }
         .button {
             width: 60px;
@@ -44,9 +47,11 @@
             background-color: #000000;
             transition: background-color 0.3s;
             color: white;
+            
         }
         .button:hover {
             background-color: #d4d4d4;
+            
         }
     </style>
 </head>
@@ -85,6 +90,10 @@
             <button class="button" onclick="calculate()">=</button>
             <button class="button" onclick="appendToDisplay('+')">+</button>
         </div>
+        
+            <h3>
+                <a href="index.html" style="color: white;">Home</a>
+            </h3>
     </div>
     <script>
         function appendToDisplay(value) {
